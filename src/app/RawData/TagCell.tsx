@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { PRIMARY_KEY } from 'src/types/data';
-import { selectFilterByContents } from 'src/utils/Select';
+import { PRIMARY_KEY } from 'types/data';
+import { selectFilterByContents } from 'utils/Select';
 import { IPairData, MyMultipleSelect } from '../../components/Select';
 
 const applyDifference = (()=>{

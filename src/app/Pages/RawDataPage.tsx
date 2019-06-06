@@ -5,9 +5,9 @@ import { connect } from 'react-redux';
 import MySelect, { IPairData, MyMultipleSelect } from '../../components/Select';
 import RawTableView from '../RawData/RawTableView'
 
-import { IRawData } from 'src/types/data';
-import addDispatch from 'src/utils/redux/AddDispatch';
-import { selectFilterByContents } from 'src/utils/Select';
+import { IRawData } from 'types/data';
+import addDispatch from 'utils/redux/AddDispatch';
+import { selectFilterByContents } from 'utils/Select';
 import { IStoreType } from '../../reducers';
 import { RawDataActions, TagActions } from '../RawData/Actions';
 import { ACTIONS, IRawDataState } from '../RawData/reducer';
@@ -51,14 +51,14 @@ const Name = (current, onChange) => ()=>(
     </div>
 )
 
-const Content = ({fileKindsList, selectTagsList, filters, rdsList, setKindFilter, setNameFilter, setTagFilter, setDescription, addTagFn, removeTagFn}) =>{
+export const Content = ({fileKindsList, selectTagsList, filters, rdsList, set, addTagFn, removeTagFn}) =>{
     return (
         <div >
             <RawTableView
             header={ {
-                "kind":KindHead(fileKindsList, filters.kindFilter, setKindFilter),
-                "tags": Tags(selectTagsList, filters.tagFilter, setTagFilter),
-                "movement_name": Name(filters.nameFilter, setNameFilter),
+                "kind":KindHead(fileKindsList, filters.kindFilter, set.kindFilter),
+                "tags": Tags(selectTagsList, filters.tagFilter, set.tagFilter),
+                "movement_name": Name(filters.nameFilter, set.nameFilter),
                 "value":"import",
                 "date":"date",
                 "description": "Description"
@@ -68,7 +68,7 @@ const Content = ({fileKindsList, selectTagsList, filters, rdsList, setKindFilter
             { ...{
                 selectTagsList,
                 rdsList,
-                setDescription,
+                setDescription: set.description,
             }}
                 />
         </div>
@@ -102,14 +102,15 @@ const mapStateToProps = ({rawDataView, tags, allData, importFileKinds}:IStoreTyp
 
 const mapDispatchToProps = addDispatch({
     addTagFn: TagActions.add,
-    setDescription: RawDataActions.setDescription,
-    setNameFilter: (e)=>ACTIONS.filterName(e.target.value),
-    setKindFilter: (e)=>ACTIONS.filterKind(e),
-    setTagFilter : ACTIONS.filterTag,
+    set: {
+        description: RawDataActions.setDescription,
+        nameFilter: (e)=>ACTIONS.filterName(e.target.value),
+        kindFilter: (e)=>ACTIONS.filterKind(e),
+        tagFilter : ACTIONS.filterTag,
+    },
     removeTagFn: TagActions.remove,
 })
 
 const connection = connect(mapStateToProps, mapDispatchToProps)
-
 
 export default connection(Content);

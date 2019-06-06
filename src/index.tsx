@@ -1,3 +1,4 @@
+import registerServiceWorker from './registerServiceWorker';
 
 import { ConnectedRouter } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
@@ -17,7 +18,6 @@ const history = createBrowserHistory()
 
 const store=createStore(reducers(history), middlewares(history))
 
-import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Provider store={store}>

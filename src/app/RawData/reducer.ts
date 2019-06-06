@@ -1,7 +1,7 @@
 import { NetworkResponse } from 'redux-api-rest';
 
-import { IRawData } from 'src/types/data';
-import { mapDate } from 'src/utils/rest';
+import { IRawData } from 'types/data';
+import { mapDate } from 'utils/rest';
 import createReducer from "../../utils/redux/CreateReducer";
 import generateActions from "../../utils/redux/GenerateActions";
 

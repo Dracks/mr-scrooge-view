@@ -1,10 +1,10 @@
 import { Select } from "antd";
 import React from 'react';
 
-import { Danger } from "src/components/dessign/buttons";
-import { Attachment, Delete, Err, Ok } from "src/components/dessign/icons";
-import { Loading } from 'src/components/network/Loading';
-import {  getOptions, IPairData } from "src/components/Select";
+import { Danger } from "components/dessign/buttons";
+import { Attachment, Delete, Err, Ok } from "components/dessign/icons";
+import { Loading } from 'components/network/Loading';
+import {  getOptions, IPairData } from "components/Select";
 import { IFileData } from '../WizardImport';
 
 interface IFileImportCell {

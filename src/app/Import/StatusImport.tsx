@@ -5,10 +5,10 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import { MetaData } from 'redux-api-rest';
-import { Danger } from 'src/components/dessign/buttons';
-import { half } from 'src/components/dessign/grid';
-import { Delete } from 'src/components/dessign/icons';
-import { addDispatchWithProps } from 'src/utils/redux/AddDispatch';
+import { Danger } from 'components/dessign/buttons';
+import { half } from 'components/dessign/grid';
+import { Delete } from 'components/dessign/icons';
+import { addDispatchWithProps } from 'utils/redux/AddDispatch';
 import { FullDate } from '../../components/dessign/date';
 import { Error, Warning } from '../../components/dessign/messages';
 import { WithNotFound } from '../../components/NotFound';

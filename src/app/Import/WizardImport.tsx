@@ -3,13 +3,13 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import { restChain } from 'redux-api-rest-hocs';
-import MyUpload from 'src/components/MyUpload';
+import MyUpload from 'components/MyUpload';
 import { Primary } from '../../components/dessign/buttons';
 import { IPairData } from '../../components/Select';
 import ImportActions from "./Actions";
 
-import { TextCenter } from 'src/components/dessign/style';
-import addDispatch from 'src/utils/redux/AddDispatch';
+import { TextCenter } from 'components/dessign/style';
+import addDispatch from 'utils/redux/AddDispatch';
 import { RawDataActions } from '../RawData/Actions';
 import FileImportPreview from './Wizard/FileImportPreview';
 

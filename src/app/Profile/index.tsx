@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import { IStoreType } from 'src/reducers';
-import addDispatch from 'src/utils/redux/AddDispatch';
+import { IStoreType } from 'reducers';
+import addDispatch from 'utils/redux/AddDispatch';
 import { ISession } from '../Session/types';
 import ProfileForm from './Form';
 import { IUpdateProfileData, ProfileActions } from './redux';

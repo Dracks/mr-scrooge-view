@@ -1,4 +1,4 @@
-import { IProfileData } from 'src/types/data';
+import { IProfileData } from 'types/data';
 
 export interface ISession extends IProfileData{
     username: string,

@@ -9,16 +9,16 @@ import { RawDataActions } from './RawData/Actions'
 import SessionActions from './Session/Actions';
 import { fetchTags } from './Tags/Actions'
 
-import ErrorViewer from 'src/components/network/ErrorViewer';
-import { IStoreType } from 'src/reducers';
-import RouterSelectors from 'src/utils/router/selectors';
+import ErrorViewer from 'components/network/ErrorViewer';
+import { IStoreType } from 'reducers';
+import RouterSelectors from 'utils/router/selectors';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Loading from '../components/network/Loading';
 import Contents from './Contents';
 import ImportActions from './Import/Actions';
 
-import MultiPropsLoadingMemo from 'src/utils/network/MultiPropsLoadingMemo';
+import MultiPropsLoadingMemo from 'utils/network/MultiPropsLoadingMemo';
 
 const isLoading = MultiPropsLoadingMemo([
     'allData',

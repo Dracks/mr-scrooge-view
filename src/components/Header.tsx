@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Link } from 'react-router-dom';
 import ResponsiveNavDefault from '../components/ResponsiveNav';
 
-import { ISession } from 'src/app/Session/types';
+import { ISession } from 'app/Session/types';
 import ResizableHOC from '../utils/responsive/HOC';
 import { Dropdown } from './dessign/icons';
 

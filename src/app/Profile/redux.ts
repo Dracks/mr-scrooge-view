@@ -1,6 +1,6 @@
 import { fetchAction, jsonHeaders, whenComplete } from 'redux-api-rest';
 
-import { IProfileData } from 'src/types/data';
+import { IProfileData } from 'types/data';
 import { SessionActions } from '../Session/Actions';
 
 export interface IUpdateProfileData extends IProfileData {

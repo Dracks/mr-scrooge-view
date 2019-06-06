@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import { Col, Form, Icon, Input, Row } from 'antd';
 
-import { Primary } from 'src/components/dessign/buttons';
-import { Error } from 'src/components/dessign/messages';
+import { Primary } from 'components/dessign/buttons';
+import { Error } from 'components/dessign/messages';
 import {eventHandler} from '../Utils';
 
 const FormItem = Form.Item;

@@ -6,7 +6,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import { AddCircle } from '../../components/dessign/icons';
 import SiderPage from '../../components/SiderPage';
 
-import addPropsHoc from 'src/utils/router/addPropsHoc';
+import addPropsHoc from 'utils/router/addPropsHoc';
 import EditTag from '../Tags/Edit';
 import NewTag from '../Tags/New';
 import { getPathElementName } from '../Utils';

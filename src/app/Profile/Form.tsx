@@ -2,9 +2,9 @@ import { Form, Input, Row } from 'antd';
 import * as React from 'react';
 
 
-import { Centered } from 'src/components/dessign/alignment';
-import { Primary } from 'src/components/dessign/buttons';
-import { half } from 'src/components/dessign/grid';
+import { Centered } from 'components/dessign/alignment';
+import { Primary } from 'components/dessign/buttons';
+import { half } from 'components/dessign/grid';
 import { eventHandler } from '../Utils';
 
 const FormItem = Form.Item

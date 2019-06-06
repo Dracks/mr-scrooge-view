@@ -9,7 +9,7 @@ import { deleteFilter, fetchFilters, fetchFiltersTypes, saveFilter } from "./Fil
 import TagsFilterTable from './Filters/TagsFilterTable';
 import Form from './Form';
 
-import MultiPropsLoadingMemo from 'src/utils/network/MultiPropsLoadingMemo';
+import MultiPropsLoadingMemo from 'utils/network/MultiPropsLoadingMemo';
 
 const CompleteForm = (props) => {
     /* tslint:disable object-literal-sort-keys */
