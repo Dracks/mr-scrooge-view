@@ -23,6 +23,7 @@ ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <ResponsiveProvider >
+                <div>Hello from testing</div>
                 <App/>
             </ResponsiveProvider>
         </ConnectedRouter>
